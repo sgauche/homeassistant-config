@@ -1,6 +1,3 @@
-#- !include sensors/internet_speed_test.yaml
-#- !include sensors/scott_to_home_travel_time.yaml
-#- !include sensors/kylie_to_home_travel_time.yaml
 - !include sensors/state_renaming.yaml
 - !include sensors/template_sensors.yaml
 - !include sensors/weather.yaml

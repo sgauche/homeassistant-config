@@ -1,6 +1,0 @@
-# Scott to Home Sensor
-platform: google_travel_time
-name: Scott To Home
-api_key: !secret google_travel_time_api_key
-origin: !secret scott_phone
-destination: zone.Home
