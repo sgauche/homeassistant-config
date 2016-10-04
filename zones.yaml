@@ -1,0 +1,15 @@
+- name: Home
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  radius: 300
+  icon: mdi:home-variant
+- name: !secret zone_work1
+  latitude: !secret work1_latitude
+  longitude: !secret work1_longitude
+  radius: 300
+  icon: mdi:chip
+- name: !secret zone_work2
+  latitude: !secret work2_latitude
+  longitude: !secret work2_longitude
+  radius: 350
+  icon: mdi:cart

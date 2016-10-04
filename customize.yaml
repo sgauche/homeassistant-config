@@ -1,0 +1,70 @@
+# device trackers
+!secret scott_phone:
+  friendly_name: !secret scott_fullname
+!secret kylie_phone:
+  friendly_name: !secret kylie_fullname
+
+# flood sensor
+sensor.flood_sensor:
+  friendly_name: 'Flood'
+  icon: mdi:water
+
+# garage door tilt sensor
+sensor.garage_door:
+  friendly_name: 'Garage'
+  icon: mdi:glassdoor
+
+# garage door opener relay
+switch.linear_fs20z_isolated_contact_fixture_module_switch_4:
+  friendly_name: 'Garage Door Opener'
+
+# scripts
+script.click_garage_door:
+  friendly_name: 'Garage Door Relay'
+  icon: mdi:glassdoor
+
+# battery levels
+sensor.flood_sensor_batt:
+  friendly_name: 'Flood Sensor'
+  icon: mdi:battery
+sensor.garage_sensor_batt:
+  friendly_name: 'Garage'
+  icon: mdi:battery
+
+# weather
+sensor.pws_temp_f:
+  friendly_name: 'Outdoor Temperature'
+sensor.pws_weather:
+  friendly_name: 'Weather Summary'
+sensor.pws_relative_humidity:
+  icon: mdi:water-percent
+  friendly_name: 'Outdoor Humidity'
+
+# home environment
+climate.ecobee:
+  friendly_name: 'Home Thermostat'
+  max_temp: 85
+  min_temp: 60
+sensor.ecobee_humidity:
+  friendly_name: 'Hallway Humidity'
+  icon: mdi:water-percent
+sensor.ecobee_temperature:
+  friendly_name: 'Hallway Temperature'
+  icon: mdi:thermometer
+sensor.dining_room_temperature:
+  friendly_name: 'Dining Room Temperature'
+  icon: mdi:thermometer
+input_slider.climate_target_high_temp:
+  friendly_name: 'Cooling Set Point'
+  icon: mdi:temperature-fahrenheit
+input_slider.climate_target_low_temp:
+  friendly_name: 'Heating Set Point'
+  icon: mdi:temperature-fahrenheit
+binary_sensor.ecobee_occupancy:
+  friendly_name: 'Hallway Occupancy'
+input_boolean.ecobee_away:
+  friendly_name: 'Away Mode'
+  icon: mdi:account
+sensor.ecobee_away:
+  icon: mdi:account
+  friendly_name: 'Away Mode'

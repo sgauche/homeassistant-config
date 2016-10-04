@@ -1,0 +1,7 @@
+# Speedtest Sensor
+platform: speedtest
+hour: '/1'
+monitored_conditions:
+  - ping
+  - download
+  - upload

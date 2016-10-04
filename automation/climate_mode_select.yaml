@@ -1,0 +1,38 @@
+- alias: Thermostat - Input Select
+  trigger:
+    - platform: state
+      entity_id: sensor.ecobee_hvac
+  action:
+    service: input_select.select_option
+    entity_id: input_select.thermo_hvac
+    data_template:
+      option: >
+        {% if is_state('sensor.ecobee_hvac', 'auto') %}
+          Auto
+        {% elif is_state('sensor.ecobee_hvac', 'cool') %}
+          Cool
+        {% elif is_state('sensor.ecobee_hvac', 'heat') %}
+          Heat
+        {% elif is_state('sensor.ecobee_hvac', 'off') %}
+          Off
+        {% else %}
+        {% endif %}
+- alias: Thermostat - Select Input
+  trigger:
+    - platform: state
+      entity_id: input_select.thermo_hvac
+  action:
+    service: climate.set_operation_mode
+    entity_id: climate.ecobee
+    data_template:
+      operation_mode: >
+        {% if is_state('input_select.thermo_hvac', 'Auto') %}
+          auto
+        {% elif is_state('input_select.thermo_hvac', 'Cool') %}
+          cool
+        {% elif is_state('input_select.thermo_hvac', 'Heat') %}
+          heat
+        {% elif is_state('input_select.thermo_hvac', 'Off') %}
+          off
+        {% else %}
+        {% endif %}

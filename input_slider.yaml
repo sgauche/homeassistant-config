@@ -1,0 +1,12 @@
+climate_target_high_temp:
+  name: Target High Temperature
+  initial: 82
+  min: 70
+  max: 85
+  step: 1
+climate_target_low_temp:
+  name: Target Low Temperature
+  initial: 64
+  min: 60
+  max: 75
+  step: 1

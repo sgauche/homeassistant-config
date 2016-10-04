@@ -1,0 +1,11 @@
+alias: 'Notify if the basement is flooding'
+trigger:
+  - platform: state
+    entity_id: sensor.flood_sensor
+    from: Dry
+    to: Wet
+action:
+  - service: notify.html5
+    data_template:
+      title: "Flood"
+      message: "Water detected in the basement! - {{ as_timestamp(now()) | timestamp_custom('%I:%M:%S %p %d%b%Y', true) }}"

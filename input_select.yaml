@@ -1,0 +1,8 @@
+climate_hvac:
+  name: HVAC Mode
+  options:
+   - 'Auto'
+   - 'Cool'
+   - 'Heat'
+   - 'Off'
+  initial: 'Auto'

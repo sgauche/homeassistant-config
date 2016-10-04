@@ -1,0 +1,13 @@
+.HA_VERSION
+OZW_Log.txt
+certs/
+deps/
+ecobee.conf
+home-assistant.log
+home-assistant_v2.db
+html5_push_registrations.conf
+known_devices.yaml
+pyozw.sqlite
+secrets.yaml
+zwcfg_0xe4045bca.xml
+zwscene.xml

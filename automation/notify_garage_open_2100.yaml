@@ -1,0 +1,19 @@
+alias: 'Notify if the garage is left open after 21:00'
+trigger:
+  - platform: time
+    hours: 21
+    minutes: 0
+    seconds: 0
+condition:
+  - condition: state
+    entity_id: sensor.garage_door
+    state: Open
+action:
+  - service: notify.html5
+    data_template:
+      title: "Garage Door"
+      message: "The garage is {{ states.sensor.garage_door.state }}. - {{ as_timestamp(now()) | timestamp_custom('%I:%M:%S %p %d%b%Y', true) }}"
+      data:
+        actions:
+          - action: "close_garage"
+            title: "Close Garage"

@@ -1,0 +1,27 @@
+alias: 'Close the garage at 23:59'
+trigger:
+  - platform: time
+    hours: 23
+    minutes: 59
+    seconds: 0
+condition:
+  - condition: state
+    entity_id: sensor.garage_door
+    state: "Open"
+  - condition: template
+    value_template: '{{ (as_timestamp(now())-as_timestamp(states.sensor.garage_door.last_changed)) > 300 }}'
+action:
+  - service: script.click_garage_door
+  - service: notify.html5
+    data_template:
+      title: "Garage Door"
+      message: "Closing the garage. - {{ as_timestamp(now()) | timestamp_custom('%I:%M:%S %p %d%b%Y', true) }}"
+  - delay: 00:00:20
+  - service: notify.html5
+    data_template:
+      title: "Garage Door"
+      message: "The garage is {{ states.sensor.garage_door.state }}. - {{ as_timestamp(now()) | timestamp_custom('%I:%M:%S %p %d%b%Y', true) }}"
+      data:
+        actions:
+          - action: "close_garage"
+            title: "Close Garage"

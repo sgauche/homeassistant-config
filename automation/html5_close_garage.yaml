@@ -1,0 +1,17 @@
+alias: HTML5 close garage
+trigger:
+  platform: event
+  event_type: html5_notification.clicked
+  event_data:
+    action: close_garage
+action:
+  - service: script.close_garage_door
+  - delay: 00:00:20
+  - service: notify.html5
+    data_template:
+      title: "Garage Door"
+      message: "The garage is {{ states.sensor.garage_door.state }}. - {{ as_timestamp(now()) | timestamp_custom('%I:%M:%S %p %d%b%Y', true) }}"
+      data:
+        actions:
+          - action: "close_garage"
+            title: "Close Garage"

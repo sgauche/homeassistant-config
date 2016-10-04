@@ -1,0 +1,76 @@
+default_view:
+  name: Home
+  view: yes
+  icon: mdi:home
+  entities:
+    - group.people
+    - group.home_climate
+    - group.flood
+    - group.garage_door
+    - group.occupancy
+    - group.weather
+
+media_players:
+  name: Media
+  view: yes
+  icon: mdi:play-circle-outline
+  entities:
+    - group.media_player
+
+system_status:
+  name: System Status
+  view: yes
+  icon: mdi:settings
+  entities:
+    - group.battery_levels
+    - group.internet
+
+People:
+# Scott
+  - !secret scott_phone
+# Kylie
+  - !secret kylie_phone
+
+
+Home Climate:
+  - climate.ecobee
+  #- input_select.climate_hvac
+  - input_boolean.ecobee_away
+  #- input_slider.climate_target_high_temp
+  #- input_slider.climate_target_low_temp
+  - sensor.ecobee_temperature
+  - sensor.dining_room_temperature
+  - sensor.ecobee_humidity
+
+Flood:
+  - sensor.flood_sensor
+
+Garage Door:
+  - script.click_garage_door
+  - sensor.garage_door
+  - input_boolean.scott_driving
+  - switch.linear_fs20z_isolated_contact_fixture_module_switch_4
+
+#Internet:
+#  - sensor.speedtest_download
+#  - sensor.speedtest_upload
+#  - sensor.speedtest_ping
+
+Occupancy:
+  - binary_sensor.ecobee_occupancy
+  - binary_sensor.dining_room_occupancy
+
+Weather:
+  - sun.sun
+  - sensor.pws_temp_f
+  - sensor.pws_relative_humidity
+  - sensor.pws_weather
+
+Media Player:
+  - media_player.bedroom
+  - media_player.living_room
+  - media_player.plex_web_chrome
+
+Battery Levels:
+  - sensor.flood_sensor_batt
+  - sensor.garage_sensor_batt

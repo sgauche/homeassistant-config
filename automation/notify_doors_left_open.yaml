@@ -1,0 +1,14 @@
+alias: 'Notify if any doors left open for 10 minutes'
+trigger:
+  - platform: state
+    entity_id:
+      - sensor.front_door
+      - sensor.side_door
+    state: 'on'
+    for:
+      minutes: 10
+action:
+  - service: notify.html5
+    data_template:
+      title: "Door Left Open"
+      message: "The {{ trigger.to_state.attributes.friendly_name }} has been open for 10 minutes. - {{ as_timestamp(now()) | timestamp_custom('%I:%M:%S %p %d%b%Y', true) }}"

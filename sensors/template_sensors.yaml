@@ -1,0 +1,32 @@
+# Template Sensors
+platform: template
+sensors:
+  flood_sensor_batt:
+    unit_of_measurement: '%'
+    value_template: >-
+      {% if states.sensor.everspring_st812_flood_detector_flood_2 %}
+        {{ states.sensor.everspring_st812_flood_detector_flood_2.attributes.battery_level }}
+      {% else %}
+        n/a
+      {% endif %}
+  garage_sensor_batt:
+    unit_of_measurement: '%'
+    value_template: >-
+      {% if states.binary_sensor.ecolink_garage_door_sensor_sensor_3 %}
+        {{ states.binary_sensor.ecolink_garage_door_sensor_sensor_3.attributes.battery_level }}
+      {% else %}
+        n/a
+      {% endif %}
+#  ecobee_mode:
+#    value_template: '{{ states.climate.home.attributes.operation_mode }}'
+  ecobee_away:
+    value_template: >-
+      {% if states.climate.ecobee %}
+        {{ states.climate.ecobee.attributes.away_mode }}
+      {% else %}
+        n/a
+      {% endif %}
+#  ecobee_target_temp_low:
+#    value_template: '{{ states.climate.home.attributes.target_temp_low }}'
+#  ecobee_target_temp_high:
+#    value_template: '{{ states.climate.home.attributes.target_temp_high }}'

@@ -1,0 +1,21 @@
+# Template Sensors
+platform: template
+sensors:
+  garage_door:
+    value_template: >-
+      {% if states.binary_sensor.ecolink_garage_door_sensor_sensor_3.state == 'on' %}
+        Open
+      {% elif states.binary_sensor.ecolink_garage_door_sensor_sensor_3.state == 'off' %}
+        Closed
+      {% else %}
+        n/a
+      {% endif %}
+  flood_sensor:
+    value_template: >-
+      {% if states.sensor.everspring_st812_flood_detector_flood_2.state == '255' %}
+        Wet
+      {% elif states.sensor.everspring_st812_flood_detector_flood_2.state == '0' %}
+        Dry
+      {% else %}
+        n/a
+      {% endif %}

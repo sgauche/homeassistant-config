@@ -1,0 +1,25 @@
+alias: 'Open garage when driving home'
+trigger:
+  - platform: zone
+    entity_id: !secret scott_phone
+    zone: zone.home
+    event: enter
+condition: 
+  condition: and
+  conditions:
+    - condition: state
+      entity_id: input_boolean.scott_driving
+      state: "on"
+    - condition: state
+      entity_id: sensor.garage_door
+      state: "Closed"
+action:
+  - service: script.click_garage_door
+  - service: notify.html5
+    data_template:
+      title: "Garage Door"
+      message: "Opening the garage! - {{ as_timestamp(now()) | timestamp_custom('%I:%M:%S %p %d%b%Y', true) }}"
+      data:
+        actions:
+          - action: "close_garage"
+            title: "Close Garage"

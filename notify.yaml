@@ -1,0 +1,12 @@
+#- name: twitter
+  #platform: twitter
+  #consumer_key: !secret twitter_consumer_key
+  #consumer_secret: !secret twitter_consumer_secret
+  #access_token: !secret twitter_access_token
+  #access_token_secret: !secret twitter_access_token_secret
+- name: HTML5
+  platform: html5
+  gcm_api_key: !secret html5_gcm_api_key
+  gcm_sender_id: !secret html5_gcm_sender_id
+- name: ecobee
+  platform: ecobee

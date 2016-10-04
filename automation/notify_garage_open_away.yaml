@@ -1,0 +1,18 @@
+alias: 'Notify if sensors change when nobody is home'
+trigger:
+  - platform: state
+    entity_id:
+      - binary_sensor.ecolink_garage_door_sensor_sensor_3
+      - binary_sensor.ecobee_occupancy
+      - binary_sensor.dining_room_occupancy
+    from: 'off'
+    to: 'on'
+condition:
+  condition: state
+  entity_id: group.all_devices
+  state: 'not_home'
+action:
+  - service: notify.html5_scott_phone
+    data_template:
+      title: "Alarm!"
+      message: "The {{ trigger.to_state.name }} was changed to {{ trigger.to_state.state }} while no one is home. - {{ as_timestamp(now()) | timestamp_custom('%I:%M:%S %p %d%b%Y', true) }}"
