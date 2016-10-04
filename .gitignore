@@ -11,3 +11,5 @@ pyozw.sqlite
 secrets.yaml
 zwcfg_0xe4045bca.xml
 zwscene.xml
+home-assistant_v2.db-journal
+html5_push_registration_backup.conf

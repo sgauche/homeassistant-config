@@ -4,10 +4,13 @@ trigger:
     entity_id: updater.updater
   - platform: event
     event_type: homeassistant_start
+condition:
+  - condition: template
+    value_template: "{{ states('updater.updater') != 'unknown' }}"
 action:
   - service: notify.html5
     data_template:
       title: "Update Available"
-      message: "Update for Home Assistant is available. - {{ as_timestamp(now()) | timestamp_custom('%I:%M:%S %p %d%b%Y', true) }}"
+      message: "Home Assistant {{ states('updater.updater') }} is available. - {{ as_timestamp(now()) | timestamp_custom('%I:%M:%S %p %d%b%Y', true) }}"
       data:
         url: "https://home-assistant.io/getting-started/installation-raspberry-pi-all-in-one/#upgrading"
