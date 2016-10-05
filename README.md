@@ -17,6 +17,9 @@
 ### Door Sensors:
   - https://amzn.com/B00OJMD2FA
 
+### Toggle Switch:
+  - https://amzn.com/B00PYMGOHM
+
 ## Wi-Fi:
 ### Thermostat:
   - https://shop.ecobee.com/products/ecobee3
