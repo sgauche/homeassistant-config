@@ -1,4 +1,4 @@
-# homeassistant-config
+# Scott's Home Assistant Configuration
 
 ## Z-Wave:
 ### Z-Wave Controller:
