@@ -74,3 +74,5 @@ Media Player:
 Battery Levels:
   - sensor.flood_sensor_batt
   - sensor.garage_sensor_batt
+  - sensor.front_door_batt
+  - sensor.side_door_batt

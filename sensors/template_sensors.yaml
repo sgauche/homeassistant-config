@@ -17,6 +17,22 @@ sensors:
       {% else %}
         n/a
       {% endif %}
+  side_door_batt:
+    unit_of_measurement: '%'
+    value_template: >-
+      {% if states.binary_sensor.ecolink_doorwindow_sensor_sensor_5 %}
+        {{ states.binary_sensor.ecolink_doorwindow_sensor_sensor_5.attributes.battery_level }}
+      {% else %}
+        n/a
+      {% endif %}
+  front_door_batt:
+    unit_of_measurement: '%'
+    value_template: >-
+      {% if states.binary_sensor.ecolink_doorwindow_sensor_sensor_6 %}
+        {{ states.binary_sensor.ecolink_doorwindow_sensor_sensor_6.attributes.battery_level }}
+      {% else %}
+        n/a
+      {% endif %}
 #  ecobee_mode:
 #    value_template: '{{ states.climate.home.attributes.operation_mode }}'
   ecobee_away:

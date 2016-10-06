@@ -38,6 +38,12 @@ sensor.flood_sensor_batt:
 sensor.garage_sensor_batt:
   friendly_name: 'Garage'
   icon: mdi:battery
+sensor.side_door_batt:
+  friendly_name: 'Side Door'
+  icon: mdi:battery
+sensor.front_door_batt:
+  friendly_name: 'Front Door'
+  icon: mdi:battery
 
 # weather
 sensor.pws_temp_f:
