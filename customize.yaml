@@ -18,6 +18,14 @@ sensor.garage_door:
 switch.linear_fs20z_isolated_contact_fixture_module_switch_4:
   friendly_name: 'Garage Door Opener'
 
+# doors
+binary_sensor.ecolink_doorwindow_sensor_sensor_5:
+  friendly_name: 'Side Door'
+  sensor_class: opening
+binary_sensor.ecolink_doorwindow_sensor_sensor_6:
+  friendly_name: 'Front Door'
+  sensor_class: opening
+
 # scripts
 script.click_garage_door:
   friendly_name: 'Garage Door Relay'

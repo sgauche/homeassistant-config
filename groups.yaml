@@ -6,6 +6,7 @@ default_view:
     - group.people
     - group.home_climate
     - group.flood
+    - group.doors
     - group.garage_door
     - group.occupancy
     - group.weather
@@ -44,6 +45,10 @@ Home Climate:
 
 Flood:
   - sensor.flood_sensor
+
+Doors:
+  - binary_sensor.ecolink_doorwindow_sensor_sensor_6
+  - binary_sensor.ecolink_doorwindow_sensor_sensor_5
 
 Garage Door:
   - script.click_garage_door
