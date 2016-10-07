@@ -14,3 +14,4 @@
     + TP-Link
     + Remove owntracks refresh script?
   - [Change split config to !include_dir_* method](https://home-assistant.io/topics/splitting_configuration/#advanced-usage)
+  - Fix ecobee away mode input_slider to only call the service if the actual ecobee away mode hasn't changed in the last X seconds.
