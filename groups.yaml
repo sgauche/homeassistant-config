@@ -6,6 +6,7 @@ default_view:
     - group.people
     - group.home_climate
     - group.flood
+    - group.lights
     - group.doors
     - group.garage_door
     - group.occupancy
@@ -45,6 +46,9 @@ Home Climate:
 
 Flood:
   - sensor.flood_sensor
+
+Lights:
+  - switch.ge_12727_inwall_smart_switch_toggle_switch_7
 
 Doors:
   - binary_sensor.ecolink_doorwindow_sensor_sensor_6

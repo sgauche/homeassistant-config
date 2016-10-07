@@ -5,6 +5,9 @@ trigger:
       - binary_sensor.ecolink_garage_door_sensor_sensor_3
       - binary_sensor.ecobee_occupancy
       - binary_sensor.dining_room_occupancy
+      - binary_sensor.ecolink_doorwindow_sensor_sensor_5
+      - binary_sensor.ecolink_doorwindow_sensor_sensor_6
+      - switch.ge_12727_inwall_smart_switch_toggle_switch_7
     from: 'off'
     to: 'on'
 condition:

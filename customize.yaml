@@ -18,6 +18,10 @@ sensor.garage_door:
 switch.linear_fs20z_isolated_contact_fixture_module_switch_4:
   friendly_name: 'Garage Door Opener'
 
+#lights
+switch.ge_12727_inwall_smart_switch_toggle_switch_7:
+  friendly_name: 'Side Door Entry'
+
 # doors
 binary_sensor.ecolink_doorwindow_sensor_sensor_5:
   friendly_name: 'Side Door'
