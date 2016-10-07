@@ -32,7 +32,7 @@ binary_sensor.ecolink_doorwindow_sensor_sensor_6:
 
 # scripts
 script.click_garage_door:
-  friendly_name: 'Garage Door Relay'
+  friendly_name: 'Garage Door Opener'
   icon: mdi:glassdoor
 
 # battery levels
