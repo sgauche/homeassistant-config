@@ -45,7 +45,7 @@ Home Climate:
   - sensor.ecobee_humidity
 
 Flood:
-  - sensor.flood_sensor
+  - binary_sensor.flood_sensor
 
 Lights:
   - switch.ge_12727_inwall_smart_switch_toggle_switch_7
@@ -56,7 +56,7 @@ Doors:
 
 Garage Door:
   - script.click_garage_door
-  - sensor.garage_door
+  - binary_sensor.ecolink_garage_door_sensor_sensor_3
 
 Occupancy:
   - binary_sensor.ecobee_occupancy

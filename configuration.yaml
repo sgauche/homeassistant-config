@@ -41,6 +41,7 @@ sun:
 #################################
 
 automation: !include automation.yaml
+binary_sensor: !include binary_sensors.yaml
 device_tracker: !include device_trackers.yaml
 ecobee: !include ecobee.yaml
 group: !include groups.yaml
