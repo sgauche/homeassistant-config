@@ -25,7 +25,7 @@ system_status:
   icon: mdi:settings
   entities:
     - group.battery_levels
-    - group.internet
+    - group.overrides
 
 People:
 # Scott
@@ -57,8 +57,6 @@ Doors:
 Garage Door:
   - script.click_garage_door
   - sensor.garage_door
-  - input_boolean.scott_driving
-  - switch.linear_fs20z_isolated_contact_fixture_module_switch_4
 
 Occupancy:
   - binary_sensor.ecobee_occupancy
@@ -80,3 +78,7 @@ Battery Levels:
   - sensor.garage_sensor_batt
   - sensor.front_door_batt
   - sensor.side_door_batt
+
+Overrides:
+  - switch.linear_fs20z_isolated_contact_fixture_module_switch_4
+  - input_boolean.scott_driving
