@@ -3,6 +3,7 @@ default_view:
   view: yes
   icon: mdi:home
   entities:
+    - persistent_notification.update_available
     - group.people
     - group.home_climate
     - group.flood
