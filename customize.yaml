@@ -37,16 +37,16 @@ script.click_garage_door:
 
 # battery levels
 sensor.flood_sensor_batt:
-  friendly_name: 'Flood Sensor'
+  friendly_name: 'Flood Sensor Battery'
   icon: mdi:battery
 sensor.garage_sensor_batt:
-  friendly_name: 'Garage'
+  friendly_name: 'Garage Tilt Sensor Battery'
   icon: mdi:battery
 sensor.side_door_batt:
-  friendly_name: 'Side Door'
+  friendly_name: 'Side Door Sensor Battery'
   icon: mdi:battery
 sensor.front_door_batt:
-  friendly_name: 'Front Door'
+  friendly_name: 'Front Door Sensor Battery'
   icon: mdi:battery
 
 # weather
