@@ -6,7 +6,6 @@
   - Automate the side door light more
     + Turn off after a certain time
     + Add Vacation mode toggle switch (turn light on and off after sunset)
-    + Turn on when arriving home after sunset
   - Improve presense detection
     + nmap
     + Bluetooth tracking
