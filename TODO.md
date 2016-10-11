@@ -7,11 +7,10 @@
     + Turn off after a certain time
     + Add Vacation mode toggle switch (turn light on and off after sunset)
     + Turn on when arriving home after sunset
-  - Improve presense detection
+  - Improve presense detection (testing bluetooth_tracker)
     + nmap
     + Bluetooth tracking
     + BLE Tracking
     + TP-Link
     + Remove owntracks refresh script?
   - [Change split config to !include_dir_* method](https://home-assistant.io/topics/splitting_configuration/#advanced-usage)
-  - Fix ecobee away mode input_slider to only call the service if the actual ecobee away mode hasn't changed in the last X seconds.

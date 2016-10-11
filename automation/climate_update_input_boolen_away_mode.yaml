@@ -2,12 +2,9 @@ alias: Ecobee - Away Input
 trigger:
   - platform: state
     entity_id: sensor.ecobee_away
+condition:
+  - condition: template
+    value_template: "{{ states('input_boolean.ecobee_away') != states('sensor.ecobee_away') }}"
 action:
-  service_template: >
-    {% if is_state('sensor.ecobee_away', 'off') %}
-      input_boolean.turn_off
-    {% elif is_state('sensor.ecobee_away', 'on') %}
-      input_boolean.turn_on
-    {% else %}
-    {% endif %}
-  entity_id: input_boolean.ecobee_away
+  - service_template: "input_boolean.turn_{{ states('sensor.ecobee_away') }}"
+    entity_id: input_boolean.ecobee_away

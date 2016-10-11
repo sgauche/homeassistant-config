@@ -1,7 +1,7 @@
 alias: 'Open garage when driving home'
 trigger:
   - platform: zone
-    entity_id: !secret scott_phone
+    entity_id: device_tracker.scott_nexus5x
     zone: zone.home
     event: enter
 condition: 

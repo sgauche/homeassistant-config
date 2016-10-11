@@ -1,7 +1,7 @@
 # device trackers
-!secret scott_phone:
+device_tracker.scott_nexus5x:
   friendly_name: !secret scott_fullname
-!secret kylie_phone:
+device_tracker.kylie_nexus5x:
   friendly_name: !secret kylie_fullname
 
 # flood sensor

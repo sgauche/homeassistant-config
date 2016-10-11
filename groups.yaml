@@ -29,10 +29,8 @@ system_status:
     - group.overrides
 
 People:
-# Scott
-  - !secret scott_phone
-# Kylie
-  - !secret kylie_phone
+  - device_tracker.scott_nexus5x
+  - device_tracker.kylie_nexus5x
 
 
 Home Climate:
