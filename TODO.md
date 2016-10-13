@@ -1,5 +1,3 @@
-  - [Automate ssl certificate renewal](https://certbot.eff.org/#debianjessie-other)
-    + switch domain back to my paid domain
   - [Hide clutter from history once PR is released](https://github.com/home-assistant/home-assistant/pull/3674)
     + Also clean logbook entries
   - Rework "Alarm"
