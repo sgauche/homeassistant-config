@@ -27,6 +27,7 @@ system_status:
   entities:
     - group.battery_levels
     - group.overrides
+    - group.all_automations
 
 People:
   - device_tracker.scott_nexus5x
@@ -34,6 +35,7 @@ People:
 
 
 Home Climate:
+  - configurator.ecobee
   - climate.ecobee
   #- input_select.climate_hvac
   - input_boolean.ecobee_away

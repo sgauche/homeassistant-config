@@ -18,12 +18,12 @@ http:
   api_password: !secret http_password
   ssl_certificate: !secret ssl_cert
   ssl_key: !secret ssl_key
-mqtt:
-  broker: 127.0.0.1
-  port: 1883
-  client_id: home-assistant-1
-  username: !secret mqtt_user
-  password: !secret mqtt_password
+#mqtt:
+  #broker: 127.0.0.1
+  #port: 1883
+  #client_id: home-assistant-1
+  #username: !secret mqtt_user
+  #password: !secret mqtt_password
 updater:
 discovery:
 #conversation:

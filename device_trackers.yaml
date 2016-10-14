@@ -1,5 +1,5 @@
-- platform: owntracks
-  max_gps_accuracy: 200
+#- platform: owntracks
+#  max_gps_accuracy: 200
 - platform: bluetooth_tracker
-  interval_seconds: 5
+  interval_seconds: 3
   track_new_devices: true
