@@ -16,3 +16,6 @@
 ### Wi-Fi:
 - Thermostat:
   * [ecobee3](https://shop.ecobee.com/products/ecobee3)
+
+## Screenshot
+![Screenshot](http://i.imgur.com/CRE0XtH.png)
