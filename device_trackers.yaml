@@ -2,4 +2,4 @@
 #  max_gps_accuracy: 200
 - platform: bluetooth_tracker
   interval_seconds: 3
-  track_new_devices: true
+  track_new_devices: false

@@ -2,12 +2,12 @@ alias: 'Notify if sensors change when nobody is home'
 trigger:
   - platform: state
     entity_id:
-      - binary_sensor.ecolink_garage_door_sensor_sensor_3
-      - binary_sensor.ecobee_occupancy
-      - binary_sensor.dining_room_occupancy
-      - binary_sensor.ecolink_doorwindow_sensor_sensor_5
-      - binary_sensor.ecolink_doorwindow_sensor_sensor_6
-      - switch.ge_12727_inwall_smart_switch_toggle_switch_7
+      - !secret zwave_door_front
+      - !secret zwave_door_side
+      - !secret zwave_flood
+      - !secret zwave_switch_garage_relay
+      - !secret zwave_switch_side_entry_light
+      - !secret zwave_tilt_garage
     from: 'off'
     to: 'on'
 condition:

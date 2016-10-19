@@ -6,4 +6,4 @@ sequence:
     message: "Garage door opener clicked."
 - service: switch.turn_on
   data:
-    entity_id: switch.linear_fs20z_isolated_contact_fixture_module_switch_4
+    entity_id: !secret zwave_switch_garage_relay

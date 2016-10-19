@@ -10,3 +10,11 @@ sensors:
       {% else %}
         n/a
       {% endif %}
+
+#      {% if states.!secret zwave_flood.state == '255' %}
+#        'on'
+#      {% elif states.sensor.everspring_st812_flood_detector_flood_2_0.state == '0' %}
+#        'off'
+#      {% else %}
+#        n/a
+#      {% endif %}

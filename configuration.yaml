@@ -25,7 +25,7 @@ http:
   #username: !secret mqtt_user
   #password: !secret mqtt_password
 updater:
-discovery:
+#discovery:
 #conversation:
 history:
 logbook:
