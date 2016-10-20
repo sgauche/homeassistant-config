@@ -51,15 +51,15 @@ Flood:
   - binary_sensor.flood_sensor
 
 Lights:
-  - !secret zwave_switch_side_entry_light
+  - switch.ge_12727_inwall_smart_switch_toggle_switch_7
 
 Doors:
-  - !secret zwave_door_side
-  - !secret zwave_door_front
+  - binary_sensor.ecolink_doorwindow_sensor_sensor_5
+  - binary_sensor.ecolink_doorwindow_sensor_sensor_6
 
 Garage Door:
   - script.click_garage_door
-  - !secret zwave_tilt_garage
+  - binary_sensor.ecolink_garage_door_sensor_sensor_3
 
 Occupancy:
   - binary_sensor.ecobee_occupancy
@@ -85,5 +85,5 @@ Battery Levels:
   - sensor.side_door_batt
 
 Overrides:
-  - !secret zwave_switch_garage_relay
+  - switch.linear_fs20z_isolated_contact_fixture_module_switch_4
   - input_boolean.scott_driving
