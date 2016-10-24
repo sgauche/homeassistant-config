@@ -29,3 +29,4 @@ monitored_conditions:
   #- precip_today_metric
   #- precip_today_string
   #- solarradiation
+  - alerts

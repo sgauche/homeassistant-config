@@ -3,9 +3,9 @@ platform: template
 sensors:
   flood_sensor:
     value_template: >-
-      {% if states.sensor.everspring_st812_flood_detector_flood_2.state == '255' %}
+      {% if states.sensor.everspring_st812_flood_detector_flood_2_5.state == '255' %}
         'on'
-      {% elif states.sensor.everspring_st812_flood_detector_flood_2.state == '0' %}
+      {% elif states.sensor.everspring_st812_flood_detector_flood_2_5.state == '0' %}
         'off'
       {% else %}
         n/a

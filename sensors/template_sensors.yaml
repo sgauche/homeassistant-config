@@ -4,32 +4,32 @@ sensors:
   flood_sensor_batt:
     unit_of_measurement: '%'
     value_template: >-
-      {% if states.sensor.everspring_st812_flood_detector_flood_2 %}
-        {{ states.sensor.everspring_st812_flood_detector_flood_2.attributes.battery_level }}
+      {% if states.sensor.everspring_st812_flood_detector_flood_2_5 %}
+        {{ states.sensor.everspring_st812_flood_detector_flood_2_5.attributes.battery_level }}
       {% else %}
         n/a
       {% endif %}
   garage_sensor_batt:
     unit_of_measurement: '%'
     value_template: >-
-      {% if states.binary_sensor.ecolink_garage_door_sensor_sensor_3 %}
-        {{ states.binary_sensor.ecolink_garage_door_sensor_sensor_3.attributes.battery_level }}
+      {% if states.binary_sensor.ecolink_garage_door_sensor_sensor_3_0 %}
+        {{ states.binary_sensor.ecolink_garage_door_sensor_sensor_3_0.attributes.battery_level }}
       {% else %}
         n/a
       {% endif %}
   side_door_batt:
     unit_of_measurement: '%'
     value_template: >-
-      {% if states.binary_sensor.ecolink_doorwindow_sensor_sensor_5 %}
-        {{ states.binary_sensor.ecolink_doorwindow_sensor_sensor_5.attributes.battery_level }}
+      {% if states.binary_sensor.ecolink_doorwindow_sensor_sensor_5_0 %}
+        {{ states.binary_sensor.ecolink_doorwindow_sensor_sensor_5_0.attributes.battery_level }}
       {% else %}
         n/a
       {% endif %}
   front_door_batt:
     unit_of_measurement: '%'
     value_template: >-
-      {% if states.binary_sensor.ecolink_doorwindow_sensor_sensor_6 %}
-        {{ states.binary_sensor.ecolink_doorwindow_sensor_sensor_6.attributes.battery_level }}
+      {% if states.binary_sensor.ecolink_doorwindow_sensor_sensor_6_0 %}
+        {{ states.binary_sensor.ecolink_doorwindow_sensor_sensor_6_0.attributes.battery_level }}
       {% else %}
         n/a
       {% endif %}

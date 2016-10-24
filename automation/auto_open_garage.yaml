@@ -1,7 +1,9 @@
 alias: 'Open garage when driving home'
 trigger:
   - platform: state
-    entity_id: device_tracker.scott_nexus5x
+    entity_id:
+      - device_tracker.scott_nexus5x_bt
+      - device_tracker.scott_nexus5x_wifi
     from: 'not_home'
     to: 'home'
 condition: 

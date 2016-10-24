@@ -1,8 +1,12 @@
 # device trackers
-device_tracker.scott_nexus5x:
-  friendly_name: !secret scott_fullname
-device_tracker.kylie_nexus5x:
-  friendly_name: !secret kylie_fullname
+device_tracker.scott_nexus5x_bt:
+  friendly_name: 'Scott Bluetooth'
+device_tracker.kylie_nexus5x_bt:
+  friendly_name: 'Kylie Bluetooth'
+device_tracker.scott_nexus5x_wifi:
+  friendly_name: 'Scott Wi-Fi'
+device_tracker.kylie_nexus5x_wifi:
+  friendly_name: 'Kylie Wi-Fi'
 
 # flood sensor
 binary_sensor.flood_sensor:
@@ -10,25 +14,31 @@ binary_sensor.flood_sensor:
   sensor_class: moisture
 
 # garage door tilt sensor
-binary_sensor.ecolink_garage_door_sensor_sensor_3:
+binary_sensor.ecolink_garage_door_sensor_sensor_3_0:
   friendly_name: 'Garage Door'
   sensor_class: opening
 
 # garage door opener relay
-switch.linear_fs20z_isolated_contact_fixture_module_switch_4:
+switch.linear_fs20z_isolated_contact_fixture_module_switch_4_0:
   friendly_name: 'Garage Door Relay'
 
 #lights
-switch.ge_12727_inwall_smart_switch_toggle_switch_7:
-  friendly_name: 'Side Door Entry'
+switch.ge_12727_inwall_smart_switch_toggle_switch_7_0:
+  friendly_name: 'Side Door Entry Light'
 
 # doors
-binary_sensor.ecolink_doorwindow_sensor_sensor_5:
+binary_sensor.ecolink_doorwindow_sensor_sensor_5_0:
   friendly_name: 'Side Door'
   sensor_class: opening
-binary_sensor.ecolink_doorwindow_sensor_sensor_6:
+binary_sensor.ecolink_doorwindow_sensor_sensor_6_0:
   friendly_name: 'Front Door'
   sensor_class: opening
+
+sensor.garage_door:
+  friendly_name: 'Garage Door'
+
+sensor.flood_sensor:
+  friendly_name: 'Flood'
 
 # scripts
 script.click_garage_door:
@@ -57,6 +67,9 @@ sensor.pws_weather:
 sensor.pws_relative_humidity:
   icon: mdi:water-percent
   friendly_name: 'Outdoor Humidity'
+sensor.pws_alerts:
+  icon: mdi:alert
+  friendly_name: 'Weather Alerts'
 
 # home environment
 climate.ecobee:

@@ -2,8 +2,8 @@ alias: 'Notify if any doors left open for 10 minutes'
 trigger:
   - platform: state
     entity_id:
-      - binary_sensor.ecolink_doorwindow_sensor_sensor_6
-      - binary_sensor.ecolink_doorwindow_sensor_sensor_5
+      - binary_sensor.ecolink_doorwindow_sensor_sensor_6_0
+      - binary_sensor.ecolink_doorwindow_sensor_sensor_5_0
     state: 'on'
     for:
       minutes: 10

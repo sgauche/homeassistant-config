@@ -1,7 +1,7 @@
 alias: 'Turn on the side entry light if the door opens after sunset'
 trigger:
   - platform: state
-    entity_id: binary_sensor.ecolink_doorwindow_sensor_sensor_5
+    entity_id: binary_sensor.ecolink_doorwindow_sensor_sensor_5_0
     from: 'off'
     to: 'on'
 condition:
@@ -9,4 +9,4 @@ condition:
     after: sunset
 action:
   - service: switch.turn_on
-    entity_id: switch.ge_12727_inwall_smart_switch_toggle_switch_7
+    entity_id: switch.ge_12727_inwall_smart_switch_toggle_switch_7_0
