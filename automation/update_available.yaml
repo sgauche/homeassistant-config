@@ -18,6 +18,5 @@ action:
     data:
       title: "Update Available"
       message: >
-        Home Assistant {{ states('updater.updater') }} is available. - {{ as_timestamp(now()) | timestamp_custom('%I:%M:%S %p %d%b%Y', true) }}
-        [How-to Upgrade](https://home-assistant.io/getting-started/installation-raspberry-pi-all-in-one/#upgrading)
+        Home Assistant [update](https://home-assistant.io/getting-started/installation-raspberry-pi-all-in-one/#upgrading) {{ states('updater.updater') }} is available. - {{ as_timestamp(now()) | timestamp_custom('%I:%M:%S %p %d%b%Y', true) }}
       notification_id: "update_available"
