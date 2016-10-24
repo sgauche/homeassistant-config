@@ -4,10 +4,13 @@ trigger:
     entity_id:
       - binary_sensor.ecolink_doorwindow_sensor_sensor_5_0
       - binary_sensor.ecolink_doorwindow_sensor_sensor_6_0
-      - sensor.everspring_st812_flood_detector_flood_2_5
+      - binary_sensor.ecolink_garage_door_sensor_sensor_3_0
+      - binary_sensor.ecobee_occupancy
+      - binary_sensor.living_room_occupancy
+      - binary_sensor.master_bedroom_occupancy
+      - binary_sensor.office_occupancy
       - switch.linear_fs20z_isolated_contact_fixture_module_switch_4_0
       - switch.ge_12727_inwall_smart_switch_toggle_switch_7_0
-      - binary_sensor.ecolink_garage_door_sensor_sensor_3_0
     from: 'off'
     to: 'on'
 condition:
