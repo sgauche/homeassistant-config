@@ -11,3 +11,4 @@
     + TP-Link
     + Remove owntracks refresh script?
   - [Change split config to !include_dir_* method](https://home-assistant.io/topics/splitting_configuration/#advanced-usage)
+  - [Implement a WOL switch](https://home-assistant.io/components/switch.wake_on_lan/)
