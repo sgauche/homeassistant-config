@@ -6,7 +6,7 @@ trigger:
       - device_tracker.scott_nexus5x_wifi
     from: 'not_home'
     to: 'home'
-condition: 
+condition:
   condition: and
   conditions:
     - condition: state
@@ -16,7 +16,7 @@ condition:
       entity_id: sensor.garage_door
       state: "Closed"
 action:
-  - service: script.click_garage_door
+  - service: script.open_garage_door
   - service: notify.html5
     data_template:
       title: "Garage Door"

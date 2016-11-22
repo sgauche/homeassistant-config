@@ -10,3 +10,30 @@ sensors:
       {% else %}
         n/a
       {% endif %}
+  door_side:
+    value_template: >-
+      {% if states.binary_sensor.ecolink_doorwindow_sensor_sensor_5_0 == 'on' %}
+        'on'
+      {% elif states.binary_sensor.ecolink_doorwindow_sensor_sensor_5_0 == 'off' %}
+        'off'
+      {% else %}
+        n/a
+      {% endif %}
+  door_front:
+    value_template: >-
+      {% if states.binary_sensor.ecolink_doorwindow_sensor_sensor_6_0 == 'on' %}
+        'on'
+      {% elif states.binary_sensor.ecolink_doorwindow_sensor_sensor_6_0 == 'off' %}
+        'off'
+      {% else %}
+        n/a
+      {% endif %}
+  door_garage:
+    value_template: >-
+      {% if states.binary_sensor.ecolink_garage_door_sensor_sensor_3_0 == 'on' %}
+        'on'
+      {% elif states.binary_sensor.ecolink_garage_door_sensor_sensor_3_0 == 'off' %}
+        'off'
+      {% else %}
+        n/a
+      {% endif %}

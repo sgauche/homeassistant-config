@@ -52,16 +52,16 @@ Flood:
   - binary_sensor.flood_sensor
 
 Lights:
-  - switch.ge_12727_inwall_smart_switch_toggle_switch_7_0
-  - switch.aeotec_zw096_smart_switch_6_switch_8_0
+  - switch.light_side_entry
+  - switch.smart_switch_6_tree
 
 Doors:
-  - binary_sensor.ecolink_doorwindow_sensor_sensor_5_0
-  - binary_sensor.ecolink_doorwindow_sensor_sensor_6_0
+  - binary_sensor.door_side
+  - binary_sensor.door_front
 
 Garage Door:
   - script.click_garage_door
-  - binary_sensor.ecolink_garage_door_sensor_sensor_3_0
+  - binary_sensor.door_garage
 
 Occupancy:
   - binary_sensor.ecobee_occupancy
@@ -88,5 +88,5 @@ Battery Levels:
   - sensor.side_door_batt
 
 Overrides:
-  - switch.linear_fs20z_isolated_contact_fixture_module_switch_4_0
+  - switch.relay_garage_door
   - input_boolean.scott_driving

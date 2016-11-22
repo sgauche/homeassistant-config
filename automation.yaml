@@ -12,6 +12,6 @@
 - !include automation/notify_garage_open_2100.yaml
 - !include automation/notify_garage_open_2159.yaml
 - !include automation/notify_sensor_change.yaml
+- !include automation/notify_update_available.yaml
 #- !include automation/owntracks_refresh.yaml
 - !include automation/side_door_entry_light_when_open.yaml
-- !include automation/update_available.yaml

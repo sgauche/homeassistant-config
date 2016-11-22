@@ -6,4 +6,4 @@ trigger:
     seconds: 30
 action:
   - service: switch.turn_off
-    entity_id: switch.aeotec_zw096_smart_switch_6_switch_8_0
+    entity_id: switch.smart_switch_6_tree

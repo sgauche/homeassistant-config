@@ -30,39 +30,29 @@ updater:
 #conversation:
 history:
   include:
-    domains:
-      - climate
-      - sensor
-      - switch
-      - binary_sensor
-      - device_tracker
-      - sun
-  exclude:
     entities:
-      - sensor.ecolink_doorwindow_sensor_alarm_level_5_1
-      - sensor.ecolink_doorwindow_sensor_alarm_level_6_1
-      - sensor.ecolink_doorwindow_sensor_alarm_type_5_0
-      - sensor.ecolink_doorwindow_sensor_alarm_type_6_0
-      - sensor.ecolink_doorwindow_sensor_burglar_5_10
-      - sensor.ecolink_doorwindow_sensor_burglar_6_10
-      - sensor.ecolink_doorwindow_sensor_sourcenodeid_5_2
-      - sensor.ecolink_doorwindow_sensor_sourcenodeid_6_2
-      - sensor.ecolink_garage_door_sensor_alarm_level_3_1
-      - sensor.ecolink_garage_door_sensor_alarm_type_3_0
-      - sensor.ecolink_garage_door_sensor_burglar_3_10
-      - sensor.ecolink_garage_door_sensor_sourcenodeid_3_2
-      - sensor.everspring_st812_flood_detector_alarm_level_2_1
-      - sensor.everspring_st812_flood_detector_alarm_type_2_0
-      - sensor.pws_weather
-      - sensor.pws_alerts
-      - sensor.pws_station_id
-      - sensor.side_door_batt
-      - sensor.flood_sensor_batt
-      - sensor.front_door_batt
-      - sensor.garage_sensor_batt
-      - sensor.everspring_st812_flood_detector_flood_2_5
-      - binary_sensor.ecolink_garage_door_sensor_sensor_3_0
+      - binary_sensor.door_front
+      - binary_sensor.door_side
+      - binary_sensor.door_garage
+      - binary_sensor.ecobee_occupancy
       - binary_sensor.flood_sensor
+      - binary_sensor.living_room_occupancy
+      - binary_sensor.master_bedroom_occupancy
+      - binary_sensor.office_occupancy
+      - device_tracker.kylie_nexus5x_bt
+      - device_tracker.kylie_nexus5x_wifi
+      - device_tracker.scott_nexus5x_bt
+      - device_tracker.scott_nexus5x_wifi
+      - sensor.ecobee_humidity
+      - sensor.ecobee_temperature
+      - sensor.living_room_temperature
+      - sensor.master_bedroom_temperature
+      - sensor.office_temperature
+      - sensor.pws_relative_humidity
+      - sensor.pws_temp_f
+      - switch.light_side_entry
+      - switch.relay_garage_door
+      - switch.smart_switch_6_tree
 logbook:
 #logger:
 recorder:
@@ -87,5 +77,6 @@ media_player: !include media_players.yaml
 notify: !include notify.yaml
 script: !include scripts.yaml
 sensor: !include sensors.yaml
+switch: !include switches.yaml
 zwave: !include zwave.yaml
 zone: !include zones.yaml

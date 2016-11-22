@@ -12,4 +12,4 @@ condition:
     before: '23:59:00'
 action:
   - service_template: "switch.turn_{{ states('group.occupancy') }}"
-    entity_id: switch.aeotec_zw096_smart_switch_6_switch_8_0
+    entity_id: switch.smart_switch_6_tree
