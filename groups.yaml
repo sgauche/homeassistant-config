@@ -53,6 +53,7 @@ Flood:
 
 Lights:
   - switch.ge_12727_inwall_smart_switch_toggle_switch_7_0
+  - switch.aeotec_zw096_smart_switch_6_switch_8_0
 
 Doors:
   - binary_sensor.ecolink_doorwindow_sensor_sensor_5_0
