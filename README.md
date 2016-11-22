@@ -12,10 +12,12 @@
   * [Ecolink Z-Wave Door/Window Sensor](https://amzn.com/B00OJMD2FA)
 - Toggle Switch:
   * [GE Z-Wave Wireless Lighting Control Smart Toggle Switch, In-Wall, White, 12727](https://amzn.com/B00PYMGOHM)
+- Smart Plug:
+  * [Aeotec by Aeon Labs ZW096 Smart Switch, Small, White](http://a.co/41nO08t)
 
 ### Wi-Fi:
 - Thermostat:
   * [ecobee3](https://shop.ecobee.com/products/ecobee3)
 
 ## Screenshot
-![Screenshot](http://i.imgur.com/CRE0XtH.png)
+![Screenshot](http://i.imgur.com/3cBjv5D.png)
