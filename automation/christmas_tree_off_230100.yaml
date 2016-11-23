@@ -2,8 +2,8 @@ alias: 'Turn the Christmas Tree off at 23:59:30'
 trigger:
   - platform: time
     hours: 23
-    minutes: 59
-    seconds: 30
+    minutes: 01
+    seconds: 00
 action:
   - service: switch.turn_off
     entity_id: switch.smart_switch_6_tree
