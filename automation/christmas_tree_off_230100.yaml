@@ -1,4 +1,4 @@
-alias: 'Turn the Christmas Tree off at 23:59:30'
+alias: 'Turn the Christmas Tree off at 23:01:00'
 trigger:
   - platform: time
     hours: 23
