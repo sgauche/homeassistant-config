@@ -19,5 +19,8 @@
 - Thermostat:
   * [ecobee3](https://shop.ecobee.com/products/ecobee3)
 
-## Screenshot
+## Garage Door Relay Wiring
+![Garage Door Relay Wiring](http://i.imgur.com/9KAGONr.png)
+
+## Front End Screenshot
 ![Screenshot](http://i.imgur.com/3cBjv5D.png)
