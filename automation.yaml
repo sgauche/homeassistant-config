@@ -1,17 +1,18 @@
+includes
 - !include automation/auto_close_garage.yaml
 - !include automation/auto_open_garage.yaml
 - !include automation/christmas_tree.yaml
 - !include automation/christmas_tree_off_230100.yaml
 - !include automation/climate_input_boolean_away_mode_set.yaml
-#- !include automation/climate_mode_select.yaml
+- !include automation/climate_mode_select.yaml
 - !include automation/climate_update_input_boolen_away_mode.yaml
 - !include automation/garage_switch_NO.yaml
 - !include automation/html5_close_garage.yaml
 - !include automation/notify_basement_flood.yaml
-#- !include automation/notify_doors_left_open.yaml
+- !include automation/notify_doors_left_open.yaml
 - !include automation/notify_garage_open_2100.yaml
 - !include automation/notify_garage_open_2159.yaml
 - !include automation/notify_sensor_change.yaml
 - !include automation/notify_update_available.yaml
-#- !include automation/owntracks_refresh.yaml
+- !include automation/owntracks_refresh.yaml
 - !include automation/side_door_entry_light_when_open.yaml
