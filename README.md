@@ -1,4 +1,5 @@
 # Scott's Home Assistant Configuration
+https://www.home-assistant.io/
 ## My Home Automation Devices
 ### Z-Wave:
 - Z-Wave Controller:
