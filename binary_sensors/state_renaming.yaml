@@ -9,27 +9,3 @@ sensors:
       {% else %}
         false
       {% endif %}
-#  door_side:
-#    entity_id: binary_sensor.ecolink_doorwindow_sensor_sensor
-#    value_template: >-
-#      {% if states.binary_sensor.ecolink_doorwindow_sensor_sensor.state == 'on' %}
-#        true
-#      {% else %}
-#        false
-#      {% endif %}
-#  door_front:
-#    entity_id: binary_sensor.ecolink_doorwindow_sensor_sensor_2
-#    value_template: >-
-#      {% if states.binary_sensor.ecolink_doorwindow_sensor_sensor.state == 'on' %}
-#        true
-#      {% else %}
-#        false
-#      {% endif %}
-#  door_garage:
-#    entity_id: binary_sensor.ecolink_tilt_sensor_sensor
-#    value_template: >-
-#      {% if states.binary_sensor.ecolink_garage_door_sensor_sensor.state == 'on' %}
-#        true
-#      {% else %}
-#        false
-#      {% endif %}

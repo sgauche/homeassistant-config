@@ -8,15 +8,13 @@ homeassistant:
   customize: !include customize.yaml
 
 #################################
-#                               #
 #           Enables             #
-#                               #
 #################################
 
 frontend:
 config:
 http:
-  base_url: https://scottgauche.com
+  base_url: !secret base_url
   ssl_certificate: /ssl/fullchain.pem
   ssl_key: /ssl/privkey.pem
 updater:
@@ -59,16 +57,8 @@ cast:
   - host: 192.168.5.31
 
 #################################
-#                               #
 #           Includes            #
-#                               #
 #################################
-# Text to speech
-#tts:
-#  - platform: google
-
-# Cloud
-#cloud:
 
 automation: !include automation.yaml
 binary_sensor: !include binary_sensors.yaml

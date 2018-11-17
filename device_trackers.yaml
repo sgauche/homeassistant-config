@@ -3,5 +3,4 @@
   home_interval: 3
   consider_home: 00:03:00
 - platform: bluetooth_tracker
-  interval_seconds: 5
   track_new_devices: false

@@ -1,7 +1,0 @@
-scott_driving:
-  name: Scott driving
-  initial: off
-  icon: mdi:car
-ecobee_away:
-  initial: off
-  name: Away Mode
