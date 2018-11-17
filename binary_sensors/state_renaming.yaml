@@ -2,34 +2,34 @@
 platform: template
 sensors:
   flood_sensor:
-    entity_id: sensor.everspring_st812_flood_detector_flood_2_5
+    entity_id: sensor.flood_detector
     value_template: >-
-      {% if states.sensor.everspring_st812_flood_detector_flood_2_5.state == '255' %}
+      {% if states.sensor.flood_detector.state == '255' %}
         true
       {% else %}
         false
       {% endif %}
-  door_side:
-    entity_id: binary_sensor.ecolink_doorwindow_sensor_sensor_5_0
-    value_template: >-
-      {% if states.binary_sensor.ecolink_doorwindow_sensor_sensor_5_0.state == 'on' %}
-        true
-      {% else %}
-        false
-      {% endif %}
-  door_front:
-    entity_id: binary_sensor.ecolink_doorwindow_sensor_sensor_6_0
-    value_template: >-
-      {% if states.binary_sensor.ecolink_doorwindow_sensor_sensor_6_0.state == 'on' %}
-        true
-      {% else %}
-        false
-      {% endif %}
-  door_garage:
-    entity_id: binary_sensor.ecolink_garage_door_sensor_sensor_3_0
-    value_template: >-
-      {% if states.binary_sensor.ecolink_garage_door_sensor_sensor_3_0.state == 'on' %}
-        true
-      {% else %}
-        false
-      {% endif %}
+#  door_side:
+#    entity_id: binary_sensor.ecolink_doorwindow_sensor_sensor
+#    value_template: >-
+#      {% if states.binary_sensor.ecolink_doorwindow_sensor_sensor.state == 'on' %}
+#        true
+#      {% else %}
+#        false
+#      {% endif %}
+#  door_front:
+#    entity_id: binary_sensor.ecolink_doorwindow_sensor_sensor_2
+#    value_template: >-
+#      {% if states.binary_sensor.ecolink_doorwindow_sensor_sensor.state == 'on' %}
+#        true
+#      {% else %}
+#        false
+#      {% endif %}
+#  door_garage:
+#    entity_id: binary_sensor.ecolink_tilt_sensor_sensor
+#    value_template: >-
+#      {% if states.binary_sensor.ecolink_garage_door_sensor_sensor.state == 'on' %}
+#        true
+#      {% else %}
+#        false
+#      {% endif %}

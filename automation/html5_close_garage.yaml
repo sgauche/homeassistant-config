@@ -10,7 +10,7 @@ action:
   - service: notify.html5
     data_template:
       title: "Garage Door"
-      message: "The garage is {{ states.sensor.garage_door.state }}. - {{ as_timestamp(now()) | timestamp_custom('%I:%M:%S %p %d%b%Y', true) }}"
+      message: "The garage is {{ states.sensor.door_garage.state }}. - {{ as_timestamp(now()) | timestamp_custom('%I:%M:%S %p %d%b%Y', true) }}"
       data:
         actions:
           - action: "close_garage"

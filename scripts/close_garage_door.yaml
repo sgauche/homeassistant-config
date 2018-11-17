@@ -1,7 +1,7 @@
 # close the garage
 sequence:
 - condition: state
-  entity_id: sensor.garage_door
+  entity_id: sensor.door_garage
   state: 'Open'
 - event: LOGBOOK_ENTRY
   event_data:

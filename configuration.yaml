@@ -14,20 +14,15 @@ homeassistant:
 #################################
 
 frontend:
+config:
 http:
-  api_password: !secret http_password
-  ssl_certificate: !secret ssl_cert
-  ssl_key: !secret ssl_key
-#mqtt:
-  #broker: 127.0.0.1
-  #port: 1883
-  #client_id: home-assistant-1
-  #username: !secret mqtt_user
-  #password: !secret mqtt_password
+  base_url: https://scottgauche.com
+  ssl_certificate: /ssl/fullchain.pem
+  ssl_key: /ssl/privkey.pem
 updater:
   reporting: no
-#discovery:
-#conversation:
+  include_used_components: false
+hassio:
 history:
   include:
     entities:
@@ -39,10 +34,10 @@ history:
       - binary_sensor.living_room_occupancy
       - binary_sensor.master_bedroom_occupancy
       - binary_sensor.office_occupancy
-      - device_tracker.kylie_nexus5x_bt
-      - device_tracker.kylie_nexus5x_wifi
-      - device_tracker.scott_nexus5x_bt
-      - device_tracker.scott_nexus5x_wifi
+      - device_tracker.kylie_phone_bt
+      - device_tracker.kylie_phone_wifi
+      - device_tracker.scott_phone_bt
+      - device_tracker.scott_phone_wifi
       - sensor.ecobee_humidity
       - sensor.ecobee_temperature
       - sensor.living_room_temperature
@@ -52,31 +47,36 @@ history:
       - sensor.pws_temp_f
       - switch.light_side_entry
       - switch.relay_garage_door
-      - switch.smart_switch_6_tree
+      - switch.smart_switch
 logbook:
-#logger:
+map:
 recorder:
-  purge_days: 30
+  purge_keep_days: 10
 sun:
+cast:
+  media_player:
+  - host: 192.168.5.30
+  - host: 192.168.5.31
 
 #################################
 #                               #
 #           Includes            #
 #                               #
 #################################
+# Text to speech
+#tts:
+#  - platform: google
+
+# Cloud
+#cloud:
 
 automation: !include automation.yaml
 binary_sensor: !include binary_sensors.yaml
 device_tracker: !include device_trackers.yaml
 ecobee: !include ecobee.yaml
 group: !include groups.yaml
-input_boolean: !include input_boolean.yaml
-#input_select: !include input_select.yaml
-#input_slider: !include input_slider.yaml
-media_player: !include media_players.yaml
 notify: !include notify.yaml
 script: !include scripts.yaml
 sensor: !include sensors.yaml
-switch: !include switches.yaml
 zwave: !include zwave.yaml
 zone: !include zones.yaml

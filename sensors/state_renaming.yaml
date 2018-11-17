@@ -1,7 +1,7 @@
 # Template Sensors
 platform: template
 sensors:
-  garage_door:
+  door_garage:
     entity_id: binary_sensor.door_garage
     value_template: >-
       {% if states.binary_sensor.door_garage.state == 'on' %}

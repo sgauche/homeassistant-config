@@ -30,18 +30,14 @@ system_status:
     - group.all_automations
 
 People:
-  - device_tracker.scott_nexus5x_bt
-  - device_tracker.scott_nexus5x_wifi
-  - device_tracker.kylie_nexus5x_bt
-  - device_tracker.kylie_nexus5x_wifi
+  - device_tracker.scott_phone_bt
+  - device_tracker.scott_phone_wifi
+  - device_tracker.kylie_phone_bt
+  - device_tracker.kylie_phone_wifi
 
 Home Climate:
   - configurator.ecobee
   - climate.ecobee
-  #- input_select.climate_hvac
-  - input_boolean.ecobee_away
-  #- input_slider.climate_target_high_temp
-  #- input_slider.climate_target_low_temp
   - sensor.ecobee_temperature
   - sensor.living_room_temperature
   - sensor.master_bedroom_temperature
@@ -50,10 +46,11 @@ Home Climate:
 
 Flood:
   - binary_sensor.flood_sensor
+  - sensor.flood_sensor
 
 Lights:
   - switch.light_side_entry
-  - switch.smart_switch_6_tree
+  - switch.smart_switch
 
 Doors:
   - binary_sensor.door_side
@@ -62,6 +59,7 @@ Doors:
 Garage Door:
   - script.click_garage_door
   - binary_sensor.door_garage
+  - sensor.door_garage
 
 Occupancy:
   - binary_sensor.ecobee_occupancy
@@ -78,8 +76,7 @@ Weather:
 
 Media Player:
   - media_player.bedroom
-  - media_player.living_room
-  - media_player.plex_web_chrome
+  - media_player.living_room_tv
 
 Battery Levels:
   - sensor.flood_sensor_batt
@@ -89,4 +86,3 @@ Battery Levels:
 
 Overrides:
   - switch.relay_garage_door
-  - input_boolean.scott_driving

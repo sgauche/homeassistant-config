@@ -1,9 +1,7 @@
-#- platform: owntracks
-#  max_gps_accuracy: 200
 - platform: nmap_tracker
   hosts: 192.168.5.10-11
   home_interval: 3
   consider_home: 00:03:00
 - platform: bluetooth_tracker
-  #interval_seconds: 3
+  interval_seconds: 5
   track_new_devices: false

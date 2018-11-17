@@ -1,4 +1,3 @@
-#refresh_devices: !include scripts/refresh_devices.yaml
 click_garage_door: !include scripts/click_garage_door.yaml
 close_garage_door: !include scripts/close_garage_door.yaml
 open_garage_door: !include scripts/open_garage_door.yaml

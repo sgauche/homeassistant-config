@@ -13,10 +13,10 @@ action:
       title: "Update Available"
       message: "Home Assistant {{ states('updater.updater') }} is available. - {{ as_timestamp(now()) | timestamp_custom('%I:%M:%S %p %d%b%Y', true) }}"
       data:
-        url: "https://home-assistant.io/getting-started/installation-raspberry-pi-all-in-one/#upgrading"
+        url: "https://www.home-assistant.io/hassio/#upgrading"
   - service: persistent_notification.create
     data:
       title: "Update Available"
       message: >
-        Home Assistant [update](https://home-assistant.io/getting-started/installation-raspberry-pi-all-in-one/#upgrading) {{ states('updater.updater') }} is available. - {{ as_timestamp(now()) | timestamp_custom('%I:%M:%S %p %d%b%Y', true) }}
+        Home Assistant [update](https://www.home-assistant.io/hassio/#upgrading) {{ states('updater.updater') }} is available. - {{ as_timestamp(now()) | timestamp_custom('%I:%M:%S %p %d%b%Y', true) }}
       notification_id: "update_available"

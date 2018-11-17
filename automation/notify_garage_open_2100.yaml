@@ -6,7 +6,7 @@ trigger:
     seconds: 0
 condition:
   - condition: state
-    entity_id: sensor.garage_door
+    entity_id: sensor.door_garage
     state: Open
 action:
   - service: notify.html5
