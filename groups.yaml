@@ -57,9 +57,10 @@ Doors:
   - binary_sensor.door_front
 
 Garage Door:
-  - script.click_garage_door
-  - binary_sensor.door_garage
-  - sensor.door_garage
+  #- script.click_garage_door
+  #- binary_sensor.door_garage
+  #- sensor.door_garage
+  - cover.door_garage
 
 Occupancy:
   - binary_sensor.ecobee_occupancy

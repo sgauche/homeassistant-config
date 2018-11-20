@@ -12,6 +12,7 @@ homeassistant:
 #################################
 
 frontend:
+#  themes:
 config:
 http:
   base_url: !secret base_url
@@ -62,6 +63,7 @@ cast:
 
 automation: !include automation.yaml
 binary_sensor: !include binary_sensors.yaml
+cover: !include covers.yaml
 device_tracker: !include device_trackers.yaml
 ecobee: !include ecobee.yaml
 group: !include groups.yaml

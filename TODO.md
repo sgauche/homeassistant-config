@@ -4,3 +4,4 @@
     + Turn off after a certain time
     + Turn off X minutes after automatically turning on
     + Add Vacation mode toggle switch (turn light on and off after sunset)
+  - [Change notifications to alerts? Does this work with HTML5 push and actions?](https://www.home-assistant.io/components/alert/)

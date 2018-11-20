@@ -1,0 +1,17 @@
+- platform: template
+  covers:
+    door_garage:
+      friendly_name: "Garage Door"
+      value_template: "{{ states.sensor.door_garage.state|lower }}"
+      open_cover:
+        service: script.open_garage_door
+      close_cover:
+        service: script.close_garage_door
+      icon_template: >-
+        {% if states.binary_sensor.door_garage.state == 'on' %}
+          mdi:garage-open
+        {% elif states.binary_sensor.door_garage.state == 'off' %}
+          mdi:garage
+        {% else %}
+          n/a
+        {% endif %}
