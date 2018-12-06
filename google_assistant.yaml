@@ -1,0 +1,30 @@
+project_id: !secret google_assistant_project_id
+api_key: !secret google_assistant_api_key
+expose_by_default: false
+exposed_domains:
+  - cover
+  - light
+entity_config:
+  light.side_entry:
+    name: Side Entry Light
+    aliases:
+      - Light
+      - Entry Light
+    expose: true
+    room: Side Entry
+  cover.door_garage:
+    name: Garage Door
+    aliases:
+      - Garage
+      - Garage door
+    expose: true
+    room: Garage
+  light.smart_switch:
+    name: Smart Switch
+    aliases:
+      - Christmas Tree
+      - Smart Switch
+    expose: true
+    room: Living Room
+  light.wemo_mini:
+    expose: false

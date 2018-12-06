@@ -6,10 +6,10 @@ trigger:
     seconds: 0
 condition:
   - condition: state
-    entity_id: sensor.garage_door
+    entity_id: sensor.door_garage
     state: "Open"
   - condition: template
-    value_template: '{{ (as_timestamp(now())-as_timestamp(states.sensor.garage_door.last_changed)) > 300 }}'
+    value_template: '{{ (as_timestamp(now())-as_timestamp(states.sensor.door_garage.last_changed)) > 300 }}'
 action:
   - service: script.close_garage_door
   - service: notify.html5
@@ -20,7 +20,7 @@ action:
   - service: notify.html5
     data_template:
       title: "Garage Door"
-      message: "The garage is {{ states.sensor.garage_door.state }}. - {{ as_timestamp(now()) | timestamp_custom('%I:%M:%S %p %d%b%Y', true) }}"
+      message: "The garage is {{ states.sensor.door_garage.state }}. - {{ as_timestamp(now()) | timestamp_custom('%I:%M:%S %p %d%b%Y', true) }}"
       data:
         actions:
           - action: "close_garage"

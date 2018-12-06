@@ -8,5 +8,6 @@ condition:
   - condition: sun
     after: sunset
 action:
+  - delay: 00:00:01
   - service: switch.turn_on
     entity_id: switch.light_side_entry

@@ -2,6 +2,7 @@
 OZW_Log.txt
 certs/
 deps/
+tts/
 .storage/
 ecobee.conf
 home-assistant.log

@@ -2,14 +2,13 @@ alias: 'Turn on the Christmas Tree if there is occupancy'
 trigger:
   - platform: state
     entity_id:
-      - binary_sensor.ecobee_occupancy
-      - binary_sensor.living_room_occupancy
-      - binary_sensor.master_bedroom_occupancy
-      - binary_sensor.office_occupancy
+      - group.occupancy
 condition:
   - condition: time
     after: '06:00:00'
-    before: '23:00:00'
+    before: '22:30:00'
 action:
-  - service_template: "switch.turn_{{ states('group.occupancy') }}"
-    entity_id: switch.smart_switch_6_tree
+  - service_template: "light.turn_{{ trigger.to_state.state }}"
+    entity_id: light.smart_switch
+  - service_template: "light.turn_{{ trigger.to_state.state }}"
+    entity_id: light.wemo_mini

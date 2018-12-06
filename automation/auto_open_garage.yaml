@@ -13,7 +13,7 @@ condition:
       entity_id: input_boolean.scott_driving
       state: "on"
     - condition: state
-      entity_id: sensor.garage_door
+      entity_id: sensor.door_garage
       state: "Closed"
 action:
   - service: script.open_garage_door

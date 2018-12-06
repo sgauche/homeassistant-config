@@ -48,6 +48,10 @@ history:
       - switch.relay_garage_door
       - switch.smart_switch
 logbook:
+  exclude:
+    entities:
+      - sensor.date__time
+      - sensor.ssl_certificate_expiry
 map:
 recorder:
   purge_keep_days: 10
@@ -56,6 +60,10 @@ cast:
   media_player:
   - host: 192.168.5.30
   - host: 192.168.5.31
+  - host: 192.168.5.32
+tts:
+  - platform: google
+    #base_url: https://73.18.94.173:443
 
 #################################
 #           Includes            #
@@ -66,9 +74,15 @@ binary_sensor: !include binary_sensors.yaml
 cover: !include covers.yaml
 device_tracker: !include device_trackers.yaml
 ecobee: !include ecobee.yaml
+google_assistant: !include google_assistant.yaml
 group: !include groups.yaml
+light: !include lights.yaml
 notify: !include notify.yaml
 script: !include scripts.yaml
 sensor: !include sensors.yaml
+wemo:
+  discovery: false
+  static:
+    - 192.168.5.70
 zwave: !include zwave.yaml
 zone: !include zones.yaml

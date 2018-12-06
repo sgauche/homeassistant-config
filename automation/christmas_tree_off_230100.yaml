@@ -1,9 +1,11 @@
-alias: 'Turn the Christmas Tree off at 23:01:00'
+alias: 'Turn the Christmas Tree off at 22:31:00'
 trigger:
   - platform: time
-    hours: 23
-    minutes: 01
+    hours: 22
+    minutes: 31
     seconds: 00
 action:
-  - service: switch.turn_off
-    entity_id: switch.smart_switch_6_tree
+  - service: light.turn_off
+    entity_id: light.smart_switch
+  - service: light.turn_off
+    entity_id: light.wemo_mini

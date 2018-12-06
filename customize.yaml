@@ -6,7 +6,7 @@ binary_sensor.flood_sensor:
 # garage door tilt sensor
 binary_sensor.door_garage:
   friendly_name: 'Garage Door'
-  sensor_class: opening
+  sensor_class: garage_door
 sensor.door_garage:
   friendly_name: 'Garage Door'
 
@@ -22,35 +22,32 @@ switch.smart_switch_6_tree:
 # doors
 binary_sensor.door_side:
   friendly_name: 'Side Door'
-  sensor_class: opening
+  sensor_class: door
 binary_sensor.door_front:
   friendly_name: 'Front Door'
-  sensor_class: opening
+  sensor_class: door
 
 sensor.garage_door:
   friendly_name: 'Garage Door'
+cover.door_garage:
+  device_class: garage
 
 sensor.flood_sensor:
   friendly_name: 'Flood'
 
-# scripts
-script.click_garage_door:
-  friendly_name: 'Garage Door Opener'
-  icon: mdi:glassdoor
-
 # battery levels
 sensor.flood_sensor_batt:
   friendly_name: 'Flood Sensor Battery'
-  icon: mdi:battery
+  device_class: battery
 sensor.garage_sensor_batt:
   friendly_name: 'Garage Tilt Sensor Battery'
-  icon: mdi:battery
+  device_class: battery
 sensor.side_door_batt:
   friendly_name: 'Side Door Sensor Battery'
-  icon: mdi:battery
+  device_class: battery
 sensor.front_door_batt:
   friendly_name: 'Front Door Sensor Battery'
-  icon: mdi:battery
+  device_class: battery
 
 # weather
 sensor.pws_temp_f:
@@ -67,8 +64,6 @@ sensor.pws_alerts:
 # home environment
 climate.ecobee:
   friendly_name: 'Home Thermostat'
-  max_temp: 85
-  min_temp: 60
 sensor.ecobee_humidity:
   friendly_name: 'Hallway Humidity'
   icon: mdi:water-percent
@@ -78,20 +73,9 @@ sensor.ecobee_temperature:
 sensor.dining_room_temperature:
   friendly_name: 'Dining Room Temperature'
   icon: mdi:thermometer
-input_slider.climate_target_high_temp:
-  friendly_name: 'Cooling Set Point'
-  icon: mdi:temperature-fahrenheit
-input_slider.climate_target_low_temp:
-  friendly_name: 'Heating Set Point'
-  icon: mdi:temperature-fahrenheit
 binary_sensor.ecobee_occupancy:
   friendly_name: 'Hallway Occupancy'
-input_boolean.ecobee_away:
-  friendly_name: 'Away Mode'
-  icon: mdi:account
-sensor.ecobee_away:
-  icon: mdi:account
-  friendly_name: 'Away Mode'
 
 group.all_automations:
   hidden: false
+  friendly_name: 'Automations'

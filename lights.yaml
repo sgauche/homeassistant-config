@@ -1,0 +1,9 @@
+- platform: switch
+  name: Side Entry
+  entity_id: switch.light_side_entry
+- platform: switch
+  name: Smart Switch
+  entity_id: switch.smart_switch
+- platform: switch
+  name: Wemo Mini
+  entity_id: switch.wemo_mini

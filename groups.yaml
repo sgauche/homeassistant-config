@@ -4,13 +4,12 @@ default_view:
   icon: mdi:home
   entities:
     - persistent_notification.update_available
+    - group.doors
+    - group.lights
     - group.people
+    - group.occupancy
     - group.home_climate
     - group.flood
-    - group.lights
-    - group.doors
-    - group.garage_door
-    - group.occupancy
     - group.weather
 
 media_players:
@@ -25,6 +24,7 @@ system_status:
   view: yes
   icon: mdi:settings
   entities:
+    - group.status
     - group.battery_levels
     - group.overrides
     - group.all_automations
@@ -49,18 +49,14 @@ Flood:
   - sensor.flood_sensor
 
 Lights:
-  - switch.light_side_entry
-  - switch.smart_switch
+  - light.side_entry
+  - light.smart_switch
+  - light.wemo_mini
 
 Doors:
+  - cover.door_garage
   - binary_sensor.door_side
   - binary_sensor.door_front
-
-Garage Door:
-  #- script.click_garage_door
-  #- binary_sensor.door_garage
-  #- sensor.door_garage
-  - cover.door_garage
 
 Occupancy:
   - binary_sensor.ecobee_occupancy
@@ -78,6 +74,7 @@ Weather:
 Media Player:
   - media_player.bedroom
   - media_player.living_room_tv
+  - media_player.living_room_speaker
 
 Battery Levels:
   - sensor.flood_sensor_batt
@@ -87,3 +84,8 @@ Battery Levels:
 
 Overrides:
   - switch.relay_garage_door
+
+Status:
+  - sensor.time_online
+  - sensor.date__time
+  - sensor.ssl_certificate_expiry

@@ -1,3 +1,6 @@
+- !include sensors/cert_expiry.yaml
+- !include sensors/date_time.yaml
 - !include sensors/state_renaming.yaml
 - !include sensors/template_sensors.yaml
+- !include sensors/uptime.yaml
 - !include sensors/weather.yaml
