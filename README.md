@@ -14,6 +14,7 @@
   * [GE Z-Wave Wireless Lighting Control Smart Toggle Switch, In-Wall, White, 12727](https://amzn.com/B00PYMGOHM)
 - Smart Plug:
   * [Aeotec by Aeon Labs ZW096 Smart Switch, Small, White](http://a.co/41nO08t)
+  * [Wemo Mini Smart Plug](http://a.co/d/dzCC03S)
 
 ### Wi-Fi:
 - Thermostat:
