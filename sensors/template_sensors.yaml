@@ -33,6 +33,26 @@ sensors:
       {% else %}
         n/a
       {% endif %}
+  door_garage:
+    entity_id: binary_sensor.door_garage
+    value_template: >-
+      {% if states.binary_sensor.door_garage.state == 'on' %}
+        Open
+      {% elif states.binary_sensor.door_garage.state == 'off' %}
+        Closed
+      {% else %}
+        n/a
+      {% endif %}
+  flood_sensor:
+    entity_id: binary_sensor.flood_sensor
+    value_template: >-
+      {% if states.binary_sensor.flood_sensor.state == 'on' %}
+        Wet
+      {% elif states.binary_sensor.flood_sensor.state == 'off' %}
+        Dry
+      {% else %}
+        n/a
+      {% endif %}
 #  ecobee_mode:
 #    value_template: '{{ states.climate.home.attributes.operation_mode }}'
 #  ecobee_away:
