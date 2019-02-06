@@ -87,5 +87,5 @@ Overrides:
 
 Status:
   - sensor.time_online
-  - sensor.date__time
+  - sensor.date_time
   - sensor.ssl_certificate_expiry

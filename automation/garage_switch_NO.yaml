@@ -1,6 +1,6 @@
 alias: 'Garage Relay normally open'
 trigger:
-  - platform: time
+  - platform: time_pattern
     seconds: '/5'
 condition:
   - condition: state

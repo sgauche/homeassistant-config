@@ -50,7 +50,7 @@ history:
 logbook:
   exclude:
     entities:
-      - sensor.date__time
+      - sensor.date_time
       - sensor.ssl_certificate_expiry
 map:
 recorder:

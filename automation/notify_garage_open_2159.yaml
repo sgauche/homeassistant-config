@@ -1,6 +1,6 @@
 alias: 'Notify if the garage is left open after 21:59'
 trigger:
-  - platform: time
+  - platform: time_pattern
     hours: 21
     minutes: 59
     seconds: 0

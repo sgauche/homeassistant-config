@@ -1,6 +1,6 @@
 alias: 'Turn the Christmas Tree off at 22:31:00'
 trigger:
-  - platform: time
+  - platform: time_pattern
     hours: 22
     minutes: 31
     seconds: 00
