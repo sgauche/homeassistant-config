@@ -36,12 +36,12 @@ People:
   - device_tracker.kylie_phone_wifi
 
 Home Climate:
-  - configurator.ecobee
+  #- configurator.ecobee
   - climate.ecobee
   - sensor.ecobee_temperature
   - sensor.living_room_temperature
   - sensor.master_bedroom_temperature
-  - sensor.office_temperature
+  - sensor.kitchen_temperature
   - sensor.ecobee_humidity
 
 Flood:
@@ -62,7 +62,7 @@ Occupancy:
   - binary_sensor.ecobee_occupancy
   - binary_sensor.living_room_occupancy
   - binary_sensor.master_bedroom_occupancy
-  - binary_sensor.office_occupancy
+  - binary_sensor.kitchen_occupancy
 
 Weather:
   - sun.sun

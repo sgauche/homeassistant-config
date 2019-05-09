@@ -2,4 +2,3 @@
 - !include sensors/date_time.yaml
 - !include sensors/template_sensors.yaml
 - !include sensors/uptime.yaml
-- !include sensors/weather.yaml

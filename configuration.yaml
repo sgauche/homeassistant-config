@@ -62,8 +62,8 @@ cast:
   - host: 192.168.5.31
   - host: 192.168.5.32
 tts:
-  - platform: google
-    #base_url: https://73.18.94.173:443
+  - platform: google_translate
+    service_name: google_say
 
 #################################
 #           Includes            #
@@ -80,6 +80,7 @@ light: !include lights.yaml
 notify: !include notify.yaml
 script: !include scripts.yaml
 sensor: !include sensors.yaml
+system_health:
 wemo:
   discovery: false
   static:
